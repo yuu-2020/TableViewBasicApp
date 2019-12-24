@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NextViewController.swift
 //  TableViewBasicApp
 //
 //  Created by Yudai Asano on 2019/12/24.
@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NextViewController: UIViewController {
 
+    @IBOutlet weak var todoLabel: UILabel!
+    var todoString: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        todoLabel.text = todoString
     }
-
-
 }
-
